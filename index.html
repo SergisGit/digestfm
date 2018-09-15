@@ -50,6 +50,7 @@
               <a href="#" class="nav__sub-link">Вакансии</a>
               <a href="#" class="nav__sub-link">Контакты</a>
               <a href="#" class="nav__sub-link">Реклама на радио</a>
+              <a href="#" class="nav__sub-link">Новости</a>
             </div>
           </div>
           <div class="nav__item">
@@ -112,7 +113,10 @@
           </div>
 
           <div class="main-slider__item">
-            <img class="main-slider__image" src="assets/images/main-slide1.jpg" alt="slide">
+            <picture>
+              <source media="(max-width: 959px)" srcset="assets/images/main-slide1-960.jpg" />
+              <img class="main-slider__image" src="assets/images/main-slide1.jpg" alt="slide">
+            </picture>
             <div class="main-slider__text">
               7 лучших зарубежных хип&nbsp;-&nbsp;хоп альбомов 2017&nbsp;года
             </div>
@@ -120,10 +124,7 @@
           </div>
 
         </div>
-        <div class="main-slider__btns">
-          <button type="button" class="main-slider__prev  arrow-btn  arrow-btn--prev" id="js-mainSliderPrev"></button>
-          <button type="button" class="main-slider__next  arrow-btn" id="js-mainSliderNext"></button>
-        </div>
+        <div class="main-slider__btns" id="js-mainSliderBtns"></div>
       </div>
 
       <div class="index__wrapper">
@@ -278,50 +279,65 @@
               <a href="#" class="btn  events__rubric">Смотреть всё</a>
             </div>
           </div>
-          <div class="events__slider-wrapper">
-            <div class="events__btns" id="js-eventBtns"></div>
+          <div class="events__slider-wrapper" id="js-eventsSliderWrapper">
 
             <div class="events__slider" id="js-eventSlider">
 
               <div class="events__slide">
+                <a href="#" class="events__link"></a>
                 <div class="events__top">
                   <img src="assets/images/events/event-01.jpg" alt="event" class="events__image">
                   <div class="events__info">
-                    <div class="events__heading">Дворец зрелищ и спорта города Томска</div>
+                    <div class="events__heading">Григорий Лепс</div>
                     <div class="events__time">27 сентября, 19:00</div>
                   </div>
+                </div>
+                <div class="events__description">
+                  27 сентября 2018 года, на сцене Дворца зрелищ и спорта города Томска, выступит звезда отечественной эстрады и, бесспорно, любимец большинства российских женщин, великолепный Григорий Лепс с новой программой — не пропусти!
                 </div>
               </div>
 
               <div class="events__slide">
+                <a href="#" class="events__link"></a>
                 <div class="events__top">
                   <img src="assets/images/events/event-01.jpg" alt="event" class="events__image">
                   <div class="events__info">
-                    <div class="events__heading">Дворец зрелищ и спорта города Томска</div>
+                    <div class="events__heading">Григорий Лепс</div>
                     <div class="events__time">27 сентября, 19:00</div>
                   </div>
+                </div>
+                <div class="events__description">
+                  27 сентября 2018 года, на сцене Дворца зрелищ и спорта города Томска, выступит звезда отечественной эстрады и, бесспорно, любимец большинства российских женщин, великолепный Григорий Лепс с новой программой — не пропусти!
                 </div>
               </div>
 
               <div class="events__slide">
+                <a href="#" class="events__link"></a>
                 <div class="events__top">
                   <img src="assets/images/events/event-01.jpg" alt="event" class="events__image">
                   <div class="events__info">
-                    <div class="events__heading">Дворец зрелищ и спорта города Томска</div>
+                    <div class="events__heading">Григорий Лепс</div>
                     <div class="events__time">27 сентября, 19:00</div>
                   </div>
+                </div>
+                <div class="events__description">
+                  27 сентября 2018 года, на сцене Дворца зрелищ и спорта города Томска, выступит звезда отечественной эстрады и, бесспорно, любимец большинства российских женщин, великолепный Григорий Лепс с новой программой — не пропусти!
                 </div>
               </div>
 
               <div class="events__slide">
-                  <div class="events__top">
-                    <img src="assets/images/events/event-01.jpg" alt="event" class="events__image">
-                    <div class="events__info">
-                      <div class="events__heading">Дворец зрелищ и спорта города Томска</div>
-                      <div class="events__time">27 сентября, 19:00</div>
-                    </div>
+                <a href="#" class="events__link"></a>
+                <div class="events__top">
+                  <img src="assets/images/events/event-01.jpg" alt="event" class="events__image">
+                  <div class="events__info">
+                    <div class="events__heading">Григорий Лепс</div>
+                    <div class="events__time">27 сентября, 19:00</div>
                   </div>
                 </div>
+                <div class="events__description">
+                  27 сентября 2018 года, на сцене Дворца зрелищ и спорта города Томска, выступит звезда отечественной эстрады и, бесспорно, любимец большинства российских женщин, великолепный Григорий Лепс с новой программой — не пропусти!
+                </div>
+              </div>
 
             </div>
           </div>
@@ -348,10 +364,7 @@
       </div>
   
       <div class="stream__list">
-        <div class="stream__list-container">
-  
-          <button type="button" class="stream__list-prev  arrow-btn  arrow-btn--prev" id="js-streamListPrev"></button>
-          <button type="button" class="stream__list-next  arrow-btn" id="js-streamListNext"></button>
+        <div class="stream__list-container" id="js-streamListContainer">
   
           <div class="stream__stations" id="js-streamStations">
   

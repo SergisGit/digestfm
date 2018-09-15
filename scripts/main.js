@@ -42,8 +42,7 @@
     touchMove: false,
     centerMode: false,
     variableWidth: true,
-    prevArrow: '#js-streamListPrev',
-    nextArrow: '#js-streamListNext'
+    appendArrows: '#js-streamListContainer'
   });
 
   var streamPlayer = new Playerjs({id:"js-streamPlayer", file:defaultStationLink});
