@@ -42,10 +42,4 @@
     appendArrows: '#js-eventBtns'
   });
 
-  eventSlider.on('beforeChange', function(event, slick, currentSlide, nextSlide){
-    var curSl = $(this).find('.slick-current .events__slide');
-    console.log(curSl);
-  });
-
-
 })();

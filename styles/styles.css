@@ -2417,7 +2417,6 @@ input[type="search"] {
   }
   .news__rubricator {
     max-width: 400px;
-    background: pink;
   }
 }
 @media (max-width: 499px) {
