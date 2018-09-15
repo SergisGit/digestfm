@@ -1747,7 +1747,7 @@ input[type="search"] {
   overflow: hidden;
   white-space: nowrap;
 }
-.events__slider .slick-current .events__top {
+.events__slider .slick-center .events__top {
   -webkit-transition: all 0.5s 0.5s;
   -o-transition: all 0.5s 0.5s;
   transition: all 0.5s 0.5s;
@@ -2414,6 +2414,10 @@ input[type="search"] {
   }
   .banners a {
     width: 100%;
+  }
+  .news__rubricator {
+    max-width: 400px;
+    background: pink;
   }
 }
 @media (max-width: 499px) {
