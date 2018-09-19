@@ -97,151 +97,120 @@
 
   <main class="main">
 
-    <div class="news">
+    <div class="radio">
+      <h1 class="radio__title">Радиостанции</h1>
+      <p class="radio__slogan">
+        Радиохолдинг «Дайджест FM» плывет по волнам тринадцати радиостанций города
+      </p>
+      <div class="radio__stations">
 
-      <div class="news__wrapper">
-        <div class="news__header">
-          <h2 class="news__title">
-            Наши новости
-          </h2>
-          <div class="news__rubricator">
-            <a href="#" class="btn  news__rubric">Радиостанции</a>
-            <a href="#" class="btn  news__rubric">Утреннее шоу</a>
-            <a href="#" class="btn  news__rubric">Вечернее шоу</a>
-            <a href="#" class="btn  news__rubric">Рекомендуем</a>
-            <a href="#" class="btn  news__rubric">Гости</a>
-            <a href="#" class="btn  news__rubric">Смотреть все</a>
-          </div>
-        </div>
+        <button type="button" class="radio__station  js-radioBtn" data-name="Радио Jazz">
+          <svg class="radio__station-svg">
+            <use xlink:href="assets/icons/symbols.svg#radio-jazz" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+          <span class="radio__station-name">Радио JAZZ</span>
+          <span class="radio__station-volume">99.6 FM</span>
+        </button>
 
-        <div class="news__list">
-          <div class="news-card">
-            <a href="#" class="news-card__link"></a>
-            <img src="assets/images/news/news-01.jpg" alt="news" class="news-card__image">
-            <div class="news-card__btns">
-              <a href="#" class="news-card__btn  btn2">Радиостанции</a>
-            </div>
-            <h4 class="news-card__title">
-              Радио «Искатель Томск» болеет за наших
-            </h4>
-            <p class="news-card__description  js-cut">
-              Первого июля на террасе Лагерного сада – команда «Радио Искатель Томск» болела со всем Томском, да чего уж там.. со всей страной за сборную России по футболу, которая играла в рамках 1/8 Чемпионата Мира со сборной Испании!
-            </p>
-            <time datetime="2018-07-02T23:55" class="news-card__time">2 июля 2018</time>
-          </div>
+        <button type="button" class="radio__station  js-radioBtn" data-name="Русское Радио">
+          <svg class="radio__station-svg">
+            <use xlink:href="assets/icons/symbols.svg#radio-russian" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+          <span class="radio__station-name">Русское Радио</span>
+          <span class="radio__station-volume">102.1 FM</span>
+        </button>
 
-          <div class="news-card">
-            <a href="#" class="news-card__link"></a>
-            <img src="assets/images/news/news-02.jpg" alt="news" class="news-card__image">
-            <div class="news-card__btns">
-              <a href="#" class="news-card__btn  btn2">Радиостанции</a>
-              <a href="#" class="news-card__btn  btn2">Гости</a>
-            </div>
-            <h4 class="news-card__title">
-              Всякий джаз прошел в музейном дворике
-            </h4>
-            <p class="news-card__description  js-cut">
-              На этих выходных в Музейном дворике прошел «Всякий Джаз». Организатором вечера выступило Радио JAZZ, 99.6. В летнем зеленом уголке нашего города собралось более 300 человек.
-            </p>
-            <time datetime="2018-07-02T23:55" class="news-card__time">2 июля 2018</time>
-          </div>
+        <button type="button" class="radio__station  js-radioBtn" data-name="Наше Радио">
+          <svg class="radio__station-svg">
+            <use xlink:href="assets/icons/symbols.svg#radio-nashe" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+          <span class="radio__station-name">Наше Радио</span>
+          <span class="radio__station-volume">90.7 FM</span>
+        </button>
 
-          <div class="news-card">
-            <a href="#" class="news-card__link"></a>
-            <img src="assets/images/news/news-03.jpg" alt="news" class="news-card__image">
-            <div class="news-card__btns">
-              <a href="#" class="news-card__btn  btn2">Новости Дайджеста</a>
-            </div>
-            <h4 class="news-card__title">
-              Радио за молодые музыкальные таланты
-            </h4>
-            <p class="news-card__description  js-cut">
-              Мы рады быть постоянным ежегодным партнером музыкального фестиваля «MUZ-ONLINE». Традиционно в фестивале принимают участие музыканты из Томска, которые исполняют свою авторскую музыку как на русском языке, так и на английском.
-            </p>
-            <time datetime="2018-07-02T23:55" class="news-card__time">2 июля 2018</time>
-          </div>
+        <button type="button" class="radio__station  js-radioBtn" data-name="Радио Искатель">
+          <svg class="radio__station-svg" style="color:#2b2a29">
+            <use xlink:href="assets/icons/symbols.svg#radio-iskatel" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+          <span class="radio__station-name">Радио ИСКАТЕЛЬ</span>
+          <span class="radio__station-volume">90.3 FM</span>
+        </button>
 
-          <div class="news-card">
-            <a href="#" class="news-card__link"></a>
-            <img src="assets/images/news/news-01.jpg" alt="news" class="news-card__image">
-            <div class="news-card__btns">
-              <a href="#" class="news-card__btn  btn2">Радиостанции</a>
-            </div>
-            <h4 class="news-card__title">
-              Радио «Искатель Томск» болеет за наших
-            </h4>
-            <p class="news-card__description  js-cut">
-              Первого июля на террасе Лагерного сада – команда «Радио Искатель Томск» болела со всем Томском, да чего уж там.. со всей страной за сборную России по футболу, которая играла в рамках 1/8 Чемпионата Мира со сборной Испании!
-            </p>
-            <time datetime="2018-07-02T23:55" class="news-card__time">2 июля 2018</time>
-          </div>
+        <button type="button" class="radio__station  js-radioBtn" data-name="Love Радио">
+          <svg class="radio__station-svg">
+            <use xlink:href="assets/icons/symbols.svg#radio-love" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+          <span class="radio__station-name">Love Radio</span>
+          <span class="radio__station-volume">95.7 FM</span>
+        </button>
 
-          <div class="news-card">
-            <a href="#" class="news-card__link"></a>
-            <img src="assets/images/news/news-02.jpg" alt="news" class="news-card__image">
-            <div class="news-card__btns">
-              <a href="#" class="news-card__btn  btn2">Радиостанции</a>
-              <a href="#" class="news-card__btn  btn2">Гости</a>
-            </div>
-            <h4 class="news-card__title">
-              Всякий джаз прошел в музейном дворике
-            </h4>
-            <p class="news-card__description  js-cut">
-              На этих выходных в Музейном дворике прошел «Всякий Джаз». Организатором вечера выступило Радио JAZZ, 99.6. В летнем зеленом уголке нашего города собралось более 300 человек.
-            </p>
-            <time datetime="2018-07-02T23:55" class="news-card__time">2 июля 2018</time>
-          </div>
+        <button type="button" class="radio__station  js-radioBtn" data-name="Радио Energy">
+          <svg class="radio__station-svg" style="color:#2b2a29">
+            <use xlink:href="assets/icons/symbols.svg#radio-nrj" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+          <span class="radio__station-name">Радио ENERGY</span>
+          <span class="radio__station-volume">106.1 FM</span>
+        </button>
 
-          <div class="news-card">
-            <a href="#" class="news-card__link"></a>
-            <img src="assets/images/news/news-03.jpg" alt="news" class="news-card__image">
-            <div class="news-card__btns">
-              <a href="#" class="news-card__btn  btn2">Новости Дайджеста</a>
-            </div>
-            <h4 class="news-card__title">
-              Радио за молодые музыкальные таланты
-            </h4>
-            <p class="news-card__description  js-cut">
-              Мы рады быть постоянным ежегодным партнером музыкального фестиваля «MUZ-ONLINE». Традиционно в фестивале принимают участие музыканты из Томска, которые исполняют свою авторскую музыку как на русском языке, так и на английском.
-            </p>
-            <time datetime="2018-07-02T23:55" class="news-card__time">2 июля 2018</time>
-          </div>
+        <button type="button" class="radio__station  js-radioBtn" data-name="Эхо Москвы">
+          <svg class="radio__station-svg">
+            <use xlink:href="assets/icons/symbols.svg#radio-eho" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+          <span class="radio__station-name">Эхо Москвы в Томске</span>
+          <span class="radio__station-volume">107.1 FM</span>
+        </button>
 
-          <div class="news-card">
-            <a href="#" class="news-card__link"></a>
-            <img src="assets/images/news/news-01.jpg" alt="news" class="news-card__image">
-            <div class="news-card__btns">
-              <a href="#" class="news-card__btn  btn2">Радиостанции</a>
-            </div>
-            <h4 class="news-card__title">
-              Радио «Искатель Томск» болеет за наших
-            </h4>
-            <p class="news-card__description  js-cut">
-              Первого июля на террасе Лагерного сада – команда «Радио Искатель Томск» болела со всем Томском, да чего уж там.. со всей страной за сборную России по футболу, которая играла в рамках 1/8 Чемпионата Мира со сборной Испании!
-            </p>
-            <time datetime="2018-07-02T23:55" class="news-card__time">2 июля 2018</time>
-          </div>
+        <button type="button" class="radio__station  js-radioBtn" data-name="Радио Maximum">
+          <svg class="radio__station-svg" style="color:#2b2a29">
+            <use xlink:href="assets/icons/symbols.svg#radio-maximum" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+          <span class="radio__station-name">Радио Maximum</span>
+          <span class="radio__station-volume">98.8 FM</span>
+        </button>
 
-          <div class="news-card">
-            <a href="#" class="news-card__link"></a>
-            <img src="assets/images/news/news-02.jpg" alt="news" class="news-card__image">
-            <div class="news-card__btns">
-              <a href="#" class="news-card__btn  btn2">Радиостанции</a>
-              <a href="#" class="news-card__btn  btn2">Гости</a>
-            </div>
-            <h4 class="news-card__title">
-              Всякий джаз прошел в музейном дворике
-            </h4>
-            <p class="news-card__description  js-cut">
-              На этих выходных в Музейном дворике прошел «Всякий Джаз». Организатором вечера выступило Радио JAZZ, 99.6. В летнем зеленом уголке нашего города собралось более 300 человек.
-            </p>
-            <time datetime="2018-07-02T23:55" class="news-card__time">2 июля 2018</time>
-          </div>
-        </div>
+        <button type="button" class="radio__station  js-radioBtn" data-name="Юмор ФМ">
+          <svg class="radio__station-svg">
+            <use xlink:href="assets/icons/symbols.svg#radio-humor" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+          <span class="radio__station-name">Юмор FM</span>
+          <span class="radio__station-volume">104.2 FM</span>
+        </button>
+
+        <button type="button" class="radio__station  js-radioBtn" data-name="DFM">
+          <svg class="radio__station-svg">
+            <use xlink:href="assets/icons/symbols.svg#radio-dfm" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+          <span class="radio__station-name">DFM</span>
+          <span class="radio__station-volume">103.8 FM</span>
+        </button>
+
+        <button type="button" class="radio__station  js-radioBtn" data-name="Хит ФМ">
+          <svg class="radio__station-svg" style="color:#2b2a29">
+            <use xlink:href="assets/icons/symbols.svg#radio-hitfm" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+          <span class="radio__station-name">Хит FM</span>
+          <span class="radio__station-volume">101.7 FM</span>
+        </button>
+
+        <button type="button" class="radio__station  js-radioBtn" data-name="Радио Мир">
+          <svg class="radio__station-svg">
+            <use xlink:href="assets/icons/symbols.svg#radio-mir" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+          <span class="radio__station-name">Радио МИР</span>
+          <span class="radio__station-volume">91.5 FM</span>
+        </button>
+
+        <button type="button" class="radio__station  js-radioBtn" data-name="Радио Дача">
+          <svg class="radio__station-svg">
+            <use xlink:href="assets/icons/symbols.svg#radio-dacha" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+          </svg>
+          <span class="radio__station-name">Радио Дача</span>
+          <span class="radio__station-volume">107.1 FM</span>
+        </button>
 
       </div>
-
     </div>
+
   </main>
 
   <footer class="page-footer">
@@ -420,10 +389,8 @@
   <script src="scripts/jquery-3.2.1.min.js"></script>
   <script src="scripts/slick.min.js"></script>
   <script src="scripts/playerjs.min.js"></script>
-  <script src="scripts/jquery.dotdotdot.js"></script>
   <script src="scripts/main.min.js"></script>
 
-  <script src="scripts/cut.min.js"></script>
 </body>
 
 </html>
