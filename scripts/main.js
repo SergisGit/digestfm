@@ -26,8 +26,8 @@
   function showCurrentStation(el) {
     var currentName = el.attr('data-name') ? '<div class="stream__current-name">'+el.attr('data-name')+'</div>' : '';
     var currentVolume = el.attr('data-volume') ? '<div class="stream__current-volume">'+el.attr('data-volume')+'</div>' : '';
-    var currentSvg = el.find('svg').clone().removeClass('stream__station-svg').addClass('stream__current-svg');
-    streamCurrent.empty().append(currentSvg);
+    var currentIcon = el.find('img').clone().removeClass('stream__icon').addClass('stream__current-icon');
+    streamCurrent.empty().append(currentIcon);
     streamCurrent.append('<div class="stream__current-info">'+currentName+currentVolume+'</div>');
   }
 
