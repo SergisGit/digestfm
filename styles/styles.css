@@ -2182,6 +2182,7 @@ img.mfp-img {
           box-sizing: border-box;
   position: relative;
   width: 276px;
+  max-width: 100%;
   border-radius: 4px;
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
@@ -4220,9 +4221,11 @@ img.mfp-img {
   padding: 0 160px;
 }
 .event__audio {
+  position: relative;
   margin-top: 40px;
   width: 240px;
   height: 75px;
+  z-index: 0;
 }
 .event__paginator {
   margin: 20px auto;
