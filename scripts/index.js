@@ -2,12 +2,12 @@
   'use strict';
 
   var mainSlider = $('#js-mainSlider');
-  var mainSliderPrev = $('#js-mainSliderPrev');
-  var mainSliderNext = $('#js-mainSliderNext');
   mainSlider.slick({
     dots: false,
-    infinite: false,
-    speed: 500,
+    infinite: true,
+    autoplay: true,
+    autoplaySpeed: 4000,
+    speed: 700,
     slidesToShow: 1,
     adaptiveHeight: true,
     touchMove: false,
