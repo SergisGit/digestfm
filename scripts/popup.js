@@ -6,6 +6,13 @@
   var letterPopup = $('#js-letterPopup');
   var letterForm = letterPopup.find('#js-letterForm');
 
+  var tokenMeta = $('meta[name="csrf-token"]');
+  var token;
+
+  if (tokenMeta.length) {
+    token = tokenMeta.attr('content');
+  }
+
   function showPopup(popup, hiddenEl) {
     var popupMsg = popup.find('.popup__msg');
     if (popupMsg.length) {
@@ -40,13 +47,15 @@
 
   if (letterForm.length) {
 
-    var letterAction = letterPopup.attr('action');
+    var letterAction = letterForm.attr('action');
     var workerInput = letterPopup.find('#js-workerInput');
     var letterFormEl = letterPopup.find('input,textarea');
-    var letterSubmit = letterPopup.find('#js-letterSubmit');
     var letterMsg = letterPopup.find('#js-letterMsg');
     var letterError = letterPopup.find('#js-letterError');
     var letterErrorBtn = letterPopup.find('#js-letterErrorBtn');
+    var letterOkBtn = letterPopup.find('#js-letterOkBtn');
+
+    var formCloseBtn = letterForm.siblings('.popup__close-btn');
 
     $.each(letterBtn, function (i) {
       var thisBtn = $(this);
@@ -56,7 +65,7 @@
         if (workerInput.length && workerId) {
           workerInput.val(workerId);
         }
-        showPopup(letterPopup, letterForm, letterMsg);
+        showPopup(letterPopup, letterForm);
       });
   
     });
@@ -65,6 +74,8 @@
       event.preventDefault();
 
       var formData = new FormData();
+
+      if (token) formData.append('_token', token);
 
       $.each(letterFormEl, function (i) {
         var thisEl = $(this);
@@ -81,6 +92,12 @@
               letterForm.addClass('hide-block');
               letterMsg.addClass('popup__msg--active');
               letterFormEl.val('');
+              letterOkBtn.on('click', function() {
+                if (formCloseBtn.length) formCloseBtn.trigger('click');
+                letterMsg.removeClass('popup__msg--active');
+                letterForm.removeClass('hide-block');
+                letterOkBtn.off('click');
+              });
             },
             error: function () {
               letterForm.addClass('hide-block');

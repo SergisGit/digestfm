@@ -26,6 +26,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="http://radio.tomsk.ru/" />
 
+  <meta name="csrf-token" content="Pxx3xB3jHaJ4n3YYkrdgpsTONgEHJa7XcyHOJbHW">
+
   <link rel="stylesheet" href="styles/styles.min.css?ver=0">
   
   <script>
@@ -816,11 +818,12 @@
 
         <input type="hidden" name="worker" id="js-workerInput">
 
-        <button type="submit" class="btn3  popup__submit  form__submit" id="js-letterSubmit">Отправить</button>
+        <button type="submit" class="btn3  popup__submit  form__submit">Отправить</button>
       </form>
       <div class="popup__msg" id="js-letterMsg">
         <h3 class="popup__msg-title">Письмо отправленно</h3>
         <p class="popup__msg-text">Спасибо за обращение</p>
+        <button type="button" class="popup__msg-back  btn3" id="js-letterOkBtn">Закрыть</button>
       </div>
       <div class="popup__msg" id="js-letterError">
         <h3 class="popup__msg-title">Прозошла ошибка</h3>
