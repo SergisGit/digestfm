@@ -2985,18 +2985,12 @@ img.mfp-img {
   overflow: hidden;
   white-space: nowrap;
 }
-.events__slider .slick-slide {
-  pointer-events: none;
-}
-.events__slider .slick-center.slick-active {
-  pointer-events: auto;
-}
 .events__slider .slick-center.slick-active .events__link {
-  -webkit-transition: opacity 0.2s, -webkit-transform 0.5s 0.5s, -webkit-filter 0.5s 0.5s;
-  transition: opacity 0.2s, -webkit-transform 0.5s 0.5s, -webkit-filter 0.5s 0.5s;
-  -o-transition: transform 0.5s 0.5s, filter 0.5s 0.5s, opacity 0.2s;
-  transition: transform 0.5s 0.5s, filter 0.5s 0.5s, opacity 0.2s;
-  transition: transform 0.5s 0.5s, filter 0.5s 0.5s, opacity 0.2s, -webkit-transform 0.5s 0.5s, -webkit-filter 0.5s 0.5s;
+  -webkit-transition: opacity 0.5s, -webkit-transform 0.5s 0.5s, -webkit-filter 0.5s 0.5s;
+  transition: opacity 0.5s, -webkit-transform 0.5s 0.5s, -webkit-filter 0.5s 0.5s;
+  -o-transition: transform 0.5s 0.5s, filter 0.5s 0.5s, opacity 0.5s;
+  transition: transform 0.5s 0.5s, filter 0.5s 0.5s, opacity 0.5s;
+  transition: transform 0.5s 0.5s, filter 0.5s 0.5s, opacity 0.5s, -webkit-transform 0.5s 0.5s, -webkit-filter 0.5s 0.5s;
   -webkit-transform: scale(1);
       -ms-transform: scale(1);
           transform: scale(1);
@@ -3020,10 +3014,6 @@ img.mfp-img {
   text-align: center;
   white-space: normal;
 }
-.events__slide:hover .events__link,
-.events__slide:active .events__link {
-  opacity: 0.9;
-}
 .events__link {
   position: relative;
   display: block;
@@ -3041,13 +3031,17 @@ img.mfp-img {
   -webkit-transform: scale(0.8);
       -ms-transform: scale(0.8);
           transform: scale(0.8);
-  -webkit-transition: opacity 0.2s, -webkit-transform 0.5s, -webkit-filter 0.5s;
-  transition: opacity 0.2s, -webkit-transform 0.5s, -webkit-filter 0.5s;
-  -o-transition: transform 0.5s, filter 0.5s, opacity 0.2s;
-  transition: transform 0.5s, filter 0.5s, opacity 0.2s;
-  transition: transform 0.5s, filter 0.5s, opacity 0.2s, -webkit-transform 0.5s, -webkit-filter 0.5s;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
   outline: none;
   overflow: hidden;
+}
+.events__link:hover,
+.events__link:active {
+  opacity: 0.9;
+  -webkit-filter: saturate(1);
+          filter: saturate(1);
 }
 .events__image {
   display: block;
