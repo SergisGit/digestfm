@@ -11,10 +11,17 @@
   var body =$('body');
   var navCheck = $('#nav-check');
   navCheck.on('change', function () {
-    if ($(this).is(':checked')) {
+    if (this.checked) {
       body.addClass('overflow-960');
     } else {
       body.removeClass('overflow-960');
+    }
+  });
+
+  var nav = $('.nav');
+  nav.on('click', function(event) {
+    if (navCheck[0].checked && ($(event.target).closest('.nav__sub-link').length  || $(event.target).closest('.nav__link').length)) {
+      navCheck.trigger('click');
     }
   });
 
